@@ -1,11 +1,10 @@
-package gos.Andrey1986._course_project.data;
+package gos.Andrey1986._course_project;
 
 import java.util.Objects;
 
 public class Question {
-    private String question;
-    private String answer;
-
+    String question;
+    String answer;
 
     public Question(String question, String answer) {
         this.question = question;
@@ -31,5 +30,13 @@ public class Question {
     @Override
     public int hashCode() {
         return Objects.hash(question, answer);
+    }
+
+    @Override
+    public String toString() {
+        return "Question{" +
+                "question='" + question + '\'' +
+                ", answer='" + answer + '\'' +
+                '}';
     }
 }
